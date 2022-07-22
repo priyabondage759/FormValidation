@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background: url('1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.container{
+    border:2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    width:calc(100vw - 65vw);
+    /* width:100%; */
+
+}
+/* heading styling */
+h2{
+    font-size: 30px;
+    font-weight: 2rem;
+    margin: 20px;
+    text-align: center;
+    color: blue;
+    text-transform: uppercase;
+    padding: 30px,0;
+}
+
+/* title (get)stying */
+.title{
+    font-size: 25px;
+    font-weight: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* Main labels of forms */
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 10px;
+    font-size: 20px;
+}
+
+/* inputs type of forms */
+form div input{
+    width:95%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 30px;
+}
+/* each div input like username,email */
+form div{
+    position: relative;
+    margin-bottom: 15px;
+}
+input:focus{
+    border:3px solid rgb(255, 0, 81);
+}
+
+/* styling to icons */
+form div i{
+position: absolute;
+padding: 10px;
+}
+
+/* checkmark styling */
+.failure-icon{
+color:red;
+visibility: visible;
+}
+
+.success-icon{
+color:green;
+visibility: visible;
+}
+
+.error{
+    font-size: 15px;
+    margin-bottom: 10px;
+    visibility: hidden;
+}
+
+/* submit button styling */
+button{
+    margin-top: 10px;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: green;
+}
+
